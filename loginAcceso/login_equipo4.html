@@ -4,12 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Login</title>
   <link href="estilos_equipo4.css" rel="stylesheet">
 </head>
 
 <body>
-
+  <header>
+    <img src="logo.png" alt="Logo ipn" style="width: 100px; height: auto; float: left">
+    <img src="logo_equipo.png" alt="logo equipo" style="width: 100px; height: auto; float: right">
+  </header>
+  <main>
+    <form action="bienvenida.html" target="_blank">
+      <h1> ACceso al sistema:</h1>
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" name="username" required placeholder="Ingrese su usuario" maxlength="20">
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required placeholder="Ingrese su contraseña" maxlength="20">
+      <button type="submit">Ingresar</button>
+    </form>
+  </main>
 </body>
 
 </html>

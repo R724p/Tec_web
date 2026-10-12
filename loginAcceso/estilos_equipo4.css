@@ -25,5 +25,17 @@ footer{
     color: white;
     position: relative;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 10px;
+    padding: 150px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+@media (max-width : 500px){
+    .container{
+        flex-direction: column;
+    }
 }

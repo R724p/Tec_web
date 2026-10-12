@@ -1,41 +1,54 @@
-h1{
-    text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+h1 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-main{
-    text-align: center;
+main {
+  text-align: center;
 
 }
 
-button{
-    background-color: darkblue;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+button {
+  background-color: darkblue;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-button:hover{
-    background-color: darkcyan;
-    color:white;
+button:hover {
+  background-color: darkcyan;
+  color: white;
 }
 
-footer{
-    background-color: darkblue;
-    color: white;
-    position: relative;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 150px;
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: darkblue;
+  color: white;
+  position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 20px;
+  height: 100px;
 }
 
-.container{
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  width: 80%;
+  padding: 20px;
+}
+
+@media (max-width : 700px) {
+  form {
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-}
+    flex-direction: column;
 
-@media (max-width : 500px){
-    .container{
-        flex-direction: column;
-    }
+  }
+
+  .container {
+    flex-direction: column;
+  }
 }

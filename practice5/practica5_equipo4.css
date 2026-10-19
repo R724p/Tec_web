@@ -4,13 +4,13 @@
 
 }
 
-@media(min-width: 750px) {
-  body {
-    background-color: darkblue;
-    color: white;
-  }
-}
 
+
+
+
+h1 {
+  text-align: center;
+}
 
 #contenedor {
   width: 90%;
@@ -76,4 +76,46 @@
 
 .col-12 {
   width: 100%;
+}
+
+@media(max-width: 999px) {
+
+  body {
+    background-color: lightblue;
+    color: darkblue;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  [class*="col-"] {
+    width: 50%;
+    float: left;
+    padding: 15px;
+  }
+
+}
+
+@media(max-width: 600px) {
+  body {
+    background-color: lightgreen;
+    color: darkgreen;
+    font-size: 18px;
+  }
+
+  [class*="col-"] {
+    width: 100%;
+    float: left;
+    padding: 15px;
+  }
+
+}
+
+@media(min-width: 1000px) {
+  body {
+    background-color: mediumpurple;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+  }
+
 }
